@@ -13,9 +13,9 @@ public class AccountMapper {
 
     public static Account toAccount(AccountDto accountDto) {
         return new Account(
-                accountDto.getId(),
-                accountDto.getAccountHolderName(),
-                accountDto.getBalance()
+                accountDto.id(),
+                accountDto.accountHolderName(),
+                accountDto.balance()
         );
     }
 
